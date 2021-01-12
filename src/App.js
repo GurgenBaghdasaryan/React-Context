@@ -1,20 +1,16 @@
 import React, { useState } from "react";
+import LoginContext from "./LoginContext";
+import Display from "./components/Display";
 import "./App.css";
-import Display from "./display/Display";
 
-export const LoginContext = React.createContext();
+const App = () => {
+  const [isLogin, setIsLogin] = useState(false);
 
-function App() {
-  const [isLogin, setIsLogin] = useState(true);
   return (
-    <>
-      <LoginContext.Provider value={{ isLogin, setIsLogin }}>
-        <div>
-          <Display />
-        </div>
-      </LoginContext.Provider>
-    </>
+    <LoginContext.Provider value={{ isLogin, setIsLogin }}>
+      <Display />
+    </LoginContext.Provider>
   );
-}
+};
 
 export default App;
