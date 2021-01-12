@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Main from "../Main";
 import Login from "../Login";
+import Main from "../Main";
 import LoginContext from "../../LoginContext";
 
 const Display = () => {

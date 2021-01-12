@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LoginContext from "./LoginContext";
 import Display from "./components/Display";
+import LoginContext from "./LoginContext";
 import "./App.css";
 
 const App = () => {

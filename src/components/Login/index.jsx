@@ -8,8 +8,8 @@ const Login = () => {
 
   const logIn = () => {
     if (!loginField.trim() || !passwordField.trim()) return;
-    setIsLogin(true)
-  }
+    setIsLogin(true);
+  };
 
   return (
     <>
@@ -26,6 +26,6 @@ const Login = () => {
       <button onClick={logIn}>Log In</button>
     </>
   );
-}
+};
 
 export default Login;

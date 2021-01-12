@@ -6,7 +6,7 @@ const Main = () => {
 
   return (
     <>
-      <div>You are now logged in!</div>
+      <div>Hello</div>
       <button onClick={() => setIsLogin(false)}>Log Out</button>
     </>
   );
